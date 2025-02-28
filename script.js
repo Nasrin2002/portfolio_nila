@@ -6,3 +6,6 @@ var typed = new Typed(".text", {
     loop: true
 });
 
+function toggleMenu() {
+    document.querySelector(".navbar").classList.toggle("show");
+}
