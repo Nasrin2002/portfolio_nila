@@ -15,9 +15,12 @@
 <body> 
 <header class="header">
     <a href="#" class="logo"> Portfolio </a>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <nav class="navbar">
+      
         <a href="#home" style="--1:2" class="active">Home</a>
         <a href="#aboutme" style="--1:3">Aboutme</a>
+        <a href="#experience" style="--1:2">Experience</a>
         <a href="#project" style="--1:4">projects</a>
         <a href="#skill" style="--1:5">skills </a>
         <a href="#contact" style="--1:6">Contact</a>
@@ -36,18 +39,18 @@
             <a class="fa fa-facebook" style="--1:7"></a>
             <a class="fa fa-twitter" style="--1:8"></a>
             <a class="fa fa-instagram" style="--1:9"></a>
-            <a class="fa fa-google" style="--1:10"></a> 
+            <a href="mailto:shiflinanilofar22@gmail.com" target="_blank" class="fa fa-envelope" style="--1:10"></a> 
         </div>
         <a href="" class="btn">Know more about me</a>
     </div>
     <div class="h_img">
-        <img src="./Screenshot_20241211-130406-2.png" alt="profile">
+        <img src="./prof.jpg" alt="profile">
     </div>
 </section>
 
 <section class="aboutme" id="aboutme">
     <div class="profile">
-        <img src="./Screenshot_20241211-130406-2.png" alt="profile">
+        <img src="./prof.jpg" class="abtimg" alt="profile">
     </div>
     <div class="about_txt">
         <h2>About <span> Me </span></h2>
@@ -63,18 +66,72 @@ Through these projects, I illustrate my ability to handle complex programming ta
 </div>
 </section>
 
-<section>
-<div class="project" id="project">
-    <div class="container">
-        <h2>Random Number Game</h2>
-        <p>“I created a random number guessing game using HTML, CSS, and JavaScript. In this interactive game, players are prompted to guess a randomly generated number within a specified range from(1-9). The HTML provides the structure of the game interface, while CSS adds styling to ensure an engaging and visually appealing experience. JavaScript handles the game logic, including generating the random number, capturing user input, providing feedback on guesses (you are right or you are wrong), and tracking the number of attempts. This fun and educational game helps players improve their guessing strategies and enjoy a simple yet addictive challenge.”</p>
-        <h4>22 dec 2024 - 24 dec 2024</h4>
-        <a href="#" class="btn">Visit My Website</a>
+<section class="experience" id="experience">
+    <h2 class="exp-title">Experience</h2>
+    
+    <div class="exp-container">
+        <!-- Art & Soul Project -->
+        <div class="exp-box">
+            <div class="exp-content">
+                <h3>Art & Soul Project</h3>
+                <h4>Creative Design & Branding</h4>
+                <p class="timeline">2023 - Present</p>
+                <p>
+                    A digital art platform showcasing immersive creative experiences. 
+                    Developed a seamless UI, animations, and interactive galleries for users.
+                </p>
+                <a href="http://artandsoul.free.nf/" class="btn">Visit Work</a>
+            </div>
+            <div class="exp-img">
+                <img src="./artandsoul.png" alt="Art & Soul Project">
+            </div>
+        </div>
+
+        <!-- NextGen Python Platform -->
+        <div class="exp-box">
+            <div class="exp-content">
+                <h3>NextGen Python Platform</h3>
+                <h4>Innovative Learning for Students</h4>
+                <p class="timeline">2022 - Present</p>
+                <p>
+                    A Python learning platform designed for students to master coding 
+                    through interactive challenges, real-time code execution, and AI-driven insights.
+                </p>
+                <a href="http://nextgenqmc.infinityfreeapp.com/" class="btn">Visit Work</a>
+            </div>
+            <div class="exp-img">
+                <img src="nextgen.png" alt="NextGen Python Platform">
+            </div>
+        </div>
     </div>
-    <div class="h_page">
-        <img src="./guess the number - Google Chrome 16-05-2024 19_01_44.png" alt="guess the number game" >
+</section>
+
+ 
+<h1 class="cen">My Projects</h1>
+<section id="project">
+    <div class="project">
+        <div class="h_page">
+            <img src="./event.png" alt="event management website">
+        </div>
+        <div class="container">
+            <h2>Event Management Website</h2>
+            <p>“I developed an event management website utilizing HTML, CSS, JavaScript, PHP, and MySQL technologies. This system provides a seamless and user-friendly platform for managing events online. The front-end interface, built with HTML, CSS, and JavaScript, ensures an intuitive and responsive user experience. The back-end, powered by PHP and MySQL, handles user authentication, event registrations, payment processing, and event tracking, ensuring data integrity and security. This comprehensive solution streamlines event planning and management efficiently.”</p>    
+            <h4>07 Feb 2024 - 25 Feb 2024</h4>
+            <a href="http://eventfusion.infinityfreeapp.com/" class="btn">Visit My Website</a>
+        </div>
+    </div>   
+
+    <div class="project">
+        <div class="container">
+            <h2>Random Number Game</h2>
+            <p>“I created a random number guessing game using HTML, CSS, and JavaScript. In this interactive game, players are prompted to guess a randomly generated number within a specified range from(1-9). The HTML provides the structure of the game interface, while CSS adds styling to ensure an engaging and visually appealing experience. JavaScript handles the game logic, including generating the random number, capturing user input, providing feedback on guesses (you are right or you are wrong), and tracking the number of attempts. This fun and educational game helps players improve their guessing strategies and enjoy a simple yet addictive challenge.”</p>
+            <h4>22 dec 2024 - 24 dec 2024</h4>
+            <a href="https://nasrin2002.github.io/guess-the-number/index.html" class="btn">Visit My Website</a>
+        </div>
+        <div class="h_page">
+            <img src="./guess the number - Google Chrome 16-05-2024 19_01_44.png" alt="guess the number game" >
+        </div>
     </div>
-</div>
 
 <div class="project">
     <div class="h_page">
@@ -84,7 +141,6 @@ Through these projects, I illustrate my ability to handle complex programming ta
         <h2>Online Voting System</h2>
         <p>“I developed an online voting system utilizing HTML, CSS, JavaScript, PHP, and MySQL technologies. This system provides a secure and user-friendly platform for conducting elections online. The front-end interface, built with HTML, CSS, and JavaScript, ensures an intuitive and responsive user experience. The back-end, powered by PHP and MySQL, handles user authentication, vote submission, and result tallying, ensuring data integrity and security. This comprehensive solution facilitates efficient and transparent voting processes.”</p>    
         <h4>07 feb 2024 - 25 feb 2024</h4>
-        <a href="#" class="btn">Visit My Website</a>
     </div>
 
 </div>
@@ -95,7 +151,6 @@ Through these projects, I illustrate my ability to handle complex programming ta
         <p>“Noteme is a user-friendly and intuitive website crafted with a blend of HTML, CSS, and JavaScript. Seamlessly combining elegant design with powerful functionality, Noteme provides users with a dynamic platform for organizing and managing notes effortlessly. Whether it’s jotting down quick thoughts, creating to-do lists, or organizing important information, Noteme offers a streamlined and responsive interface, making note-taking a breeze. Elevate your productivity and stay organized with Noteme’s user-centric approach to note management.”</p>    
         <h4>27 dec 2023 - 28 jan 2024</h4>
         <a href="./noteme documentation process.docx" download>click here to download a file documentation</a><br>
-        <a href="#" class="btn">Visit My Website</a>
     </div>
     <div class="h_page">
         <img src="./notme.png" alt="Noteme">
@@ -117,8 +172,9 @@ Through these projects, I illustrate my ability to handle complex programming ta
 </section>
 <br>
 
+<h1 class="cen">My Cerifications </h1><br><br><br>
 <section class="skill" id="skill">
-    <h1>courses with Certificates</h1>
+    <h1 class="cour">courses with Certificates</h1>
     <ul>
         <li class="box">HTML & CSS <span>in (Hero to Zero) from letsUpgade.</span> 
         <h3>Valid till <span>life time access</span></h3>
@@ -132,11 +188,16 @@ Through these projects, I illustrate my ability to handle complex programming ta
     
         <li class="box">Python <span> from Guvi.</span> 
         <h3>Valid till <span>life time access</span></h3>
-        <a href="#" download>Download My Certificate</a>
+        <a href="https://drive.google.com/file/d/18aooZxY5kGSo3qHo74R3y0ygHcqPlqkb/preview" target="_blank">View My Certificate</a>
+        </li>
+        <li class="box">Software Engineer Intern <span> from HackerRank.</span> 
+            <h3>Valid till <span>life time access</span></h3>
+            <a href="https://drive.google.com/file/d/18YN20BtfU3tlwkGHnYh5eUO-wJqZrw80/preview" target="_blank">View My Certificate</a>
         </li>
             
     </ul>
 </section>
+<br><br><br>
 
 <section id="contact">
     <h1 class="subtitle">Contact &nbsp;<span>Me</span></h1>
@@ -149,7 +210,7 @@ Through these projects, I illustrate my ability to handle complex programming ta
             <a class="fa fa-facebook" style="--1:11"></a>
             <a class="fa fa-twitter" style="--1:12"></a>
             <a class="fa fa-instagram" style="--1:13"></a>
-            <a class="fa fa-google" style="--1:14"></a> 
+            <a href="mailto:shiflinanilofar22@gmail.com" target="_blank" class="fa fa-envelope" style="--1:14"></a> 
         </div>
         <p class="footer">@Made with <i class="fa fa-heart-o"></i> by Shiflina nilofar p</p>
     </div>
